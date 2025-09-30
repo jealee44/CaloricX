@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- Improved compatibility of back to top link -->
 
-## Getting Started
+<a id="readme-top"></a>
 
-First, run the development server:
+<!-- TITLE -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# CaloricX — Adaptive Calorie Coach
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="center">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Adaptive calorie targets from real progress.**  
+_For learning & portfolio use only — not medical advice._
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#mvp-features">MVP Features</a></li>
+    <li><a href="#limitations--disclaimer">Limitations & Disclaimer</a></li>
+  </ol>
+</details>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Problem
 
-## Deploy on Vercel
+Most calorie apps set a fixed daily/weekly target and never update it as your weight and activity change, causing stalls or overshooting.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Solution
+
+CaloricX recomputes next week’s calorie budget using your recent weight trend and logged intake, applying a bounded adjustment (e.g., `±250 kcal/day`) and showing a human-readable rationale.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## MVP Features
+
+- **Email/password auth** (http-only cookie session)
+- **Daily food logging** (search/manual), **morning weigh-ins**
+- **Weekly budget recompute** + **explanation card**
+- **Dashboard:** trend charts & adherence summary
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Limitations & Disclaimer
+
+For learning & portfolio use only — not medical advice.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
