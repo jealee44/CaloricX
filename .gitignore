@@ -50,3 +50,4 @@ node_modules/
 
 .drizzle/*_meta
 coverage
+.env*.local
